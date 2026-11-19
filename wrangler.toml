@@ -1,3 +1,4 @@
 name = "my-mcp-server"
 main = "src/index.ts"
 compatibility_date = "2025-11-14"
+compatibility_flags = ["nodejs_compat"]

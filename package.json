@@ -1,0 +1,22 @@
+{
+  "name": "kreyator-mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+ "dependencies": {
+  "agents": "latest",
+  "@modelcontextprotocol/server": "2.4.0",
+  "zod": "latest"
+},
+"devDependencies": {
+  "@cloudflare/workers-types": "latest",
+  "typescript": "^5.7.0",
+  "wrangler": "latest"
+}
+
+}

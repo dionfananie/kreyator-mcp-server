@@ -8,6 +8,20 @@ function createServer() {
     version: "1.0.0",
   });
 
+  server.registerTool(
+    "cek_server",
+    {
+      description: "Mengembalikan ID unik server ini",
+      inputSchema: {},
+    },
+    async () => {
+      return {
+        content: [
+          { type: "text", text: "Server ID: MCP-DION-2026-XK7Q9" },
+        ],
+      };
+    },
+  )
   // Tool: sapa — mengembalikan pesan sapaan
   server.registerTool(
     "hello",
